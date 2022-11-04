@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.turno{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    transition: all 0.8s;
+    border-radius: 0;
+    clip-path: polygon(20% 0%, 0 0, 0 52%, 0 100%, 20% 100%, 51% 100%, 100% 100%, 100% 80%, 100% 48%, 100% 0, 80% 0%, 53% 0);
+}
+
+.turno--X{
+    background-color: #1E40AF;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.turno--O{
+    background-color: #166534;
+    border-radius: 50%;
+}
+
+
+
+/*CLASES CUADROS*/
+.cuadro{
+    width: 100px;
+    height: 100px;
+    background-color: #374151 ;
+    transition: all 0.8s;
+    border-radius: 0;
+    clip-path: polygon(20% 0%, 0 0, 0 52%, 0 100%, 20% 100%, 51% 100%, 100% 100%, 100% 80%, 100% 48%, 100% 0, 80% 0%, 53% 0);
+}
+
+/*Pintar Cuadros en X y O*/
+
+.cuadro--X{
+    background-color: #1E40AF;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.cuadro--O{
+    background-color: #166534;
+    border-radius: 50%;
+}
+
+ /*Animaciones ganadores*/   
+
+.cuadro--X.ganador{
+    animation-duration: 5s;
+    animation: spin 1s linear infinite;
+}
+
+.cuadro--O.ganador{
+    animation-duration: 5s;
+    animation: rotateY 1s linear infinite;
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes rotateY {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+	
