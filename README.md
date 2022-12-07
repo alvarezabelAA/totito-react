@@ -1,4 +1,4 @@
-If you want to prove it I uploaded my project to HEROKU here is the link: 
+If you want to prove it I uploaded my project to VERCEL here is the link: 
 
 https://totito-react.vercel.app/
 
