@@ -1,7 +1,6 @@
 If you want to prove it I uploaded my project to HEROKU here is the link: 
 
-https://totio-my-app.herokuapp.com/
-
+https://totito-react.vercel.app/
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
